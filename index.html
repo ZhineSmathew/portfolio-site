@@ -10,8 +10,10 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <!-- Link external CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -73,8 +75,7 @@
     <div class="mobile-menu-overlay" id="mobileMenuOverlay">
         <div class="mobile-menu-content">
             <div class="mobile-menu-header">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face"
-                    alt="Shine S" class="mobile-profile-img">
+                <img src="assets\images\branded-logo.jpg" alt="Shine S" class="navbar-profile-img">
                 <button class="mobile-menu-close" onclick="toggleMobileMenu()">
                     <i class="fas fa-times"></i>
                 </button>
@@ -96,7 +97,7 @@
                 <div class="col-lg-7 col-md-6 order-2 order-md-1">
                     <div class="hero-text fade-in">
                         <h1>Hi, I'm Shine S</h1>
-                        <p class="lead typing-animation">A passionate Software Engineer</p>
+                        <p class="lead typing-text">A passionate Software Engineer</p>
                         <p class="mb-4">I specialize in full-stack development, creating innovative solutions that
                             bridge the gap between design and functionality. With expertise in modern technologies, I
                             bring ideas to life through clean, efficient code.</p>
@@ -110,7 +111,9 @@
                 </div>
                 <div class="col-lg-5 col-md-6 order-1 order-md-2 text-center mb-4 mb-md-0">
                     <div class="profile-container fade-in">
-                        <img src="assets\images\protfoliio-porfile.JPG" alt="My profile picture" class="profile-img">
+                        <img src="assets/images/protfoliio-porfile.jpg" alt="My profile picture" class="profile-img">
+                        <!-- <img src="assets/images/profile-portfolio.png" alt="My profile picture" class="profile-img"> -->
+
                         <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Shine S" class="profile-img"> -->
                     </div>
                 </div>
@@ -178,9 +181,10 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="/files/documents/Shine_SE_resume.pdf" target="_blank" class="btn-custom" download>
-                    <i class="fas fa-download me-2"></i>Download Resume
-                </a>
+                <button
+                    class="btn btn-color-1 btn-custom" download onclick="window.open('./assets/shine_s_resume.pdf')">
+                    Download CV
+                </button>
             </div>
         </div>
     </section>
@@ -282,7 +286,7 @@
                         <h5>PHP</h5>
                         <p>Server-side Scripting</p>
                         <div class="skill-details">
-                            <p><strong>Experience:</strong> 5+ years</p>
+                            <p><strong>Experience:</strong> 4+ years</p>
                             <div class="progress mb-2">
                                 <div class="progress-bar" role="progressbar" style="width: 85%">85%</div>
                             </div>
@@ -469,6 +473,7 @@
                             </span>
                             <input type="email" class="form-control" name="email" placeholder="Your Email" id="email"
                                 required>
+                            <input type="hidden" id="submissionDate" name="submissionDate">
                         </div>
                     </div>
                     <div class="mb-4">
@@ -504,20 +509,20 @@
                 <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                     <div class="footer-contact-item">
                         <h6 class="text-muted mb-2">Call Today :</h6>
-                        <a href="tel:+15551234567" class="footer-contact-link">+91 (7034) 1433-60( Personal )</a>
+                        <a href="tel:+15551234567" class="footer-contact-link">+91 (7034) 1433-60</a>
                         </br>
-                        <a href="tel:+15551234567" class="footer-contact-link">+91 (7039) 9480-57( office )</a>
+                        <!-- <a href="tel:+15551234567" class="footer-contact-link">+91 (7039) 9480-57( office )</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-3 mb-lg-0">
                     <div class="footer-contact-item">
                         <!-- <h6 class="text-muted mb-2">Social :</h6> -->
                         <div class="social-links-inline">
-                            <a href="https://github.com/shines" target="_blank" title="GitHub"><i
+                            <a href="https://github.com/ZhineSmathew" target="_blank" title="GitHub"><i
                                     class="fab fa-github"></i></a>
-                            <a href="https://instagram.com/shines" target="_blank" title="Instagram"><i
+                            <a href="https://www.instagram.com/__thadikaran/" target="_blank" title="Instagram"><i
                                     class="fab fa-instagram"></i></a>
-                            <a href="https://linkedin.com/in/shines" target="_blank" title="LinkedIn"><i
+                            <a href="https://www.linkedin.com/in/shine-s-profile/" target="_blank" title="LinkedIn"><i
                                     class="fab fa-linkedin-in"></i></a>
                             <a href="https://wa.me/917034143360?text=Hi%20I%20want%20to%20chat%20over%20coffee!"
                                 target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -529,10 +534,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact-item text-lg-end">
                         <div class="footer-logo">
-                            <!-- <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face"
-                                alt="Shine S" class="footer-profile-img"> -->
-                            <img src="assets\images\footer-image.PNG" alt="My profile picture" class="footer-profile-img">
-
+                            <img src="assets\images\footer-image.png" alt="My profile picture" class="footer-profile-img">
                             <span class="footer-name">Shine S</span>
                         </div>
                     </div>

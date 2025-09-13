@@ -104,17 +104,17 @@
     });
 
     // Skill card toggle functionality
-    function toggleSkill(card) {
-        // Close all other skill cards
-        document.querySelectorAll('.skill-card').forEach(otherCard => {
-            if (otherCard !== card) {
-                otherCard.classList.remove('active');
-            }
-        });
+    // function toggleSkill(card) {
+    //     // Close all other skill cards
+    //     document.querySelectorAll('.skill-card').forEach(otherCard => {
+    //         if (otherCard !== card) {
+    //             otherCard.classList.remove('active');
+    //         }
+    //     });
         
-        // Toggle current card
-        card.classList.toggle('active');
-    }
+    //     // Toggle current card
+    //     card.classList.toggle('active');
+    // }
 
     // Contact form handling
     document.getElementById('contactForm').addEventListener('submit', function(e) {
@@ -237,3 +237,9 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
     })
+
+    // Get today's date in YYYY-MM-DD format
+    const today = new Date().toISOString().split('T')[0];
+    
+    // Set it as the hidden input value
+    document.getElementById("submissionDate").value = today;
