@@ -125,15 +125,16 @@
         const message = document.getElementById('message').value;
         
         // Basic validation
-        if (!name || !email || !message || !contact ) {
+        if (!name || !message || !contact ) {
             alert('Please fill in all fields.');
             return;
         }
-        
-        if (!isValidEmail(email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
+
+        // Remove the required field
+        // if (!isValidEmail(email)) { 
+        //     alert('Please enter a valid email address.');
+        //     return;
+        // }
         
         // Simulate form submission
         const button = this.querySelector('button[type="submit"]');
