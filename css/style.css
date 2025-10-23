@@ -1291,7 +1291,7 @@
             /* typing effect */
             @keyframes typing {
             from { width: 0; }
-            to { width: 26ch; } /* match character count */
+            to { width: 25ch; } /* match character count */
             }
 
             /* blinking cursor */
