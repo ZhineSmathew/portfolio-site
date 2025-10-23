@@ -29,7 +29,7 @@
         }
 
         body {
-            font-family: cursive;
+            font-family: serif;
             background-color: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
@@ -1291,7 +1291,7 @@
             /* typing effect */
             @keyframes typing {
             from { width: 0; }
-            to { width: 25ch; } /* match character count */
+            to { width: 26ch; } /* match character count */
             }
 
             /* blinking cursor */
